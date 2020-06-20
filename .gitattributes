@@ -1,2 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Declara explícitamente los archivos de texto que siempre quieres que estén normalizados y convertidos
+# a finales de línea nativos en el control.
+*.c text
+*.h text
+
+# Declara los archivos que siempre tendrán los finales de línea CRLF en el control.
+*.sln text eol=crlf
+
+# Denota todos los archivos que son absolutamente binarios y no deberían modificarse.
+*.png binary
+*.jpg binary
